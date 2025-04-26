@@ -132,7 +132,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/configs/hidl/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/derp/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/configs/hidl/compatibility_matrix.xml
 
@@ -148,7 +148,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
--include vendor/derp/config/BoardConfigReservedSize.mk
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_ODMIMAGE_PARTITION_RESERVED_SIZE := 30720000
 BOARD_USES_METADATA_PARTITION := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
@@ -191,7 +191,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/derp/sepolicy/libperfmgr/sepolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
