@@ -507,15 +507,5 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    android.media.audio.common.types-V2-cpp \
-    libavservices_minijail \
-    libgui_shim \
-    libinput_shim \
-    libnl \
-    libpng.vendor \
-    libwfdaac_vendor
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/sm8250-common/sm8250-common-vendor.mk)
